@@ -1,0 +1,159 @@
+@import url(./global.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.container-list {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  margin: 10%;
+  margin-top: 5%;
+
+  background: whitesmoke;
+  border-radius: 10px;
+}
+
+#add-task {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  margin: 20px 50px 20px;
+}
+
+#input-list {
+  width: 100%;
+  background: transparent;
+  color: var(--text-color);
+  border-radius: 40px;
+  font-family: poppins;
+  font-size: 18px;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+}
+
+#btn-add {
+  background: var(--bold-text-color);
+  color: var(--background-color-nav);
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 40px;
+  font-family: poppins;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.container-list > h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container-list > h2 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#icon-list {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.task-item-added {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  border: solid 1px var(--bold-text-color);
+  border-radius: 5px;
+  position: relative;
+  margin: 0px;
+  height: 30px;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(212, 209, 212);
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+  width: 60%;
+}
+
+.tasks-container > p {
+  font-size: 22px;
+  margin: 5px;
+  color: rgb(26, 99, 121);
+}
+
+#task-item ul li {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: stretch;
+}
+
+.task-item-added li {
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  float: left;
+  left: 0;
+}
+.task-item-added button {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-left: auto;
+  margin-right: 0px;
+
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  background-color: rgb(26, 99, 121);
+}
+
+.task-item-added > li {
+  display: flex;
+  justify-content: left;
+}
+
+.task-item-added text {
+  float: left;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+@media screen and (max-width: 700px) {
+  .container-list {
+    margin: 10px;
+    margin-top: 5%;
+  }
+
+  #add-task {
+    width: 90%;
+  }
+
+  .tasks-container {
+    margin: 10px;
+    width: 90%;
+  }
+}
